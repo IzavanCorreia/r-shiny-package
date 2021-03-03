@@ -1,5 +1,5 @@
 ---
-title: "r-shiny-package"
+title: "Linguagem R - Pacote Shiny"
 author: "Mariana Vieira, Izavan Correia, Daniel S"
 date: "03/03/2021"
 output:
@@ -8,9 +8,7 @@ output:
     fig_height: 5
 ---
 
-# Linguagem R - Pacote Shiny
-
-<img src="./assets/shiny-logo.png" width="200">
+<img src="./assets/shiny-logo.png" width="200" align="center">
 
 ## Sumário
 

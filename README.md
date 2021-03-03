@@ -1,11 +1,9 @@
-r-shiny-package
+Linguagem R - Pacote Shiny
 ================
 Mariana Vieira, Izavan Correia, Daniel S
 03/03/2021
 
-# Linguagem R - Pacote Shiny
-
-<img src="./assets/shiny-logo.png" width="200">
+<img src="./assets/shiny-logo.png" width="200" align="center">
 
 ## Sumário
 
