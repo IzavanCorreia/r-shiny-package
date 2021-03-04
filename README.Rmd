@@ -35,7 +35,7 @@ De forma geral, no mercado da tecnologia da informação, o desenvolvimento dest
 
 Todos os serviços de streaming de música ou filmes, internet banking e redes sociais, frequentemente usados por nós, constituem complexas aplicações Web, que utilizam não apenas uma, mas várias tecnologias Web.
 
-Neste contexto, o **Shiny** é um sistema composto por: um **pacote de funções** construídas na Linguagem R e um **servidor web** denominado "***Shiny server***", este conjunto permite a criação de **interfaces** amigáveis para a **visualização** e a **análise de dados** em aplicações Web. Este pacote permite a interação do usuário com os dados da maneira que mais lhe for conveniente, o que pode envolver desde a criação de filtros à escolha do tipo de visualização (gráficos de dispersão, histogramas etc.). Isto é possível gracas à sua integração com outros pacotes R como ggvis, ggiraph, plotly, etc.
+Neste contexto, o **Shiny** é um sistema composto por: um **pacote de funções** construídas na Linguagem R e um **servidor web** denominado ***"Shiny server"***, este conjunto permite a criação de **interfaces** amigáveis para a **visualização** e a **análise de dados** em aplicações Web. Este pacote permite a interação do usuário com os dados da maneira que mais lhe for conveniente, o que pode envolver desde a criação de filtros à escolha do tipo de visualização (gráficos de dispersão, histogramas etc.). Isto é possível gracas à sua integração com outros pacotes R como ggvis, ggiraph, plotly, etc.
 
 É importante pontuar que **o Shiny não é uma aplicação web**, mas sim uma extensão que torna a Linguagem R uma tecnologia ainda mais robusta e versátil!
 

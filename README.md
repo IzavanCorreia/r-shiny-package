@@ -51,7 +51,7 @@ aplicações Web, que utilizam não apenas uma, mas várias tecnologias Web.
 
 Neste contexto, o **Shiny** é um sistema composto por: um **pacote de
 funções** construídas na Linguagem R e um **servidor web** denominado
-“***Shiny server***”, este conjunto permite a criação de **interfaces**
+***“Shiny server”***, este conjunto permite a criação de **interfaces**
 amigáveis para a **visualização** e a **análise de dados** em aplicações
 Web. Este pacote permite a interação do usuário com os dados da maneira
 que mais lhe for conveniente, o que pode envolver desde a criação de
