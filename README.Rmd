@@ -38,6 +38,7 @@ Neste contexto, o Shiny é um sistema composto por: um pacote de funções const
 
 <img src="./assets/software-engineer.gif" width="350">
 
+
 ## Construção da primeira aplicação Web com Shiny
 
 ### Primeiro passo: Instalar o pacote
