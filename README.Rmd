@@ -1,6 +1,6 @@
 ---
 title: "Linguagem R - Pacote Shiny"
-author: "Mariana Vieira, Izavan Correia, Daniel S"
+author: "Mariana Vieira, Izavan Correia, Marcos Daniel"
 date: "03/03/2021"
 output:
   github_document:
@@ -100,6 +100,17 @@ Segue uma lista das principais funções para outputs utilizados em um Shiny app
 
 
 ### O que é uma aplicação Web?
+
+Aplicações Web se referem a **sistemas de informação** construídos com base em **tecnologias** e **protocolos** próprios da **Web**, tais como HTTP, HTTPS, HTML, CSS e Javascript. Estas aplicações podem ainda utilizar frameworks e bibliotecas derivados das tecnologias já citadas, a exemplo da biblioteca React, destina à construção de interfaces para **sites** renderizados em browsers de PC, React Native, destinada ao desenvolvimento de **aplicativos móveis** ***crossplatforms***, e Node.Js, destinada à criação de sistemas que rodam em servidores. Não necessariamente estas aplicações precisam estar conectadas à rede para funcionarem.
+
+De forma geral, no mercado da tecnologia da informação, o desenvolvimento deste tipo de sistema, é dividido em: desenvolvimento **front-end**, que se refere à porcão ***client-side***, e em **back-end**, que se refere ao ***server-side***. Ambas as ramificações configuram aplicações web, tanto quando consideradas sob uma ótica individual, quanto conjunta. Neste último caso, a arquitetura do sistema revela a lógica ou o padrão mais comum de funcionamento das aplicações Web: o **modelo de requisições** (enviadas pelo usuário) **e de respostas** (enviadas pelos servidores). 
+
+Todos os serviços de streaming de música ou filmes, internet banking e redes sociais, frequentemente usados por nós, constituem complexas aplicações Web, que utilizam não apenas uma, mas várias tecnologias Web.
+
+Neste contexto, o **Shiny** é um sistema composto por: um **pacote de funções** construídas na Linguagem R e um **servidor web** denominado ***"Shiny server"***, este conjunto permite a criação de **interfaces** amigáveis para a **visualização** e a **análise de dados** em aplicações Web. Este pacote permite a interação do usuário com os dados da maneira que mais lhe for conveniente, o que pode envolver desde a criação de filtros à escolha do tipo de visualização (gráficos de dispersão, histogramas etc.). Isto é possível gracas à sua integração com outros pacotes R como ggvis, ggiraph, plotly, etc.
+
+É importante pontuar que **o Shiny não é uma aplicação web**, mas sim uma extensão que torna a Linguagem R uma tecnologia ainda mais robusta e versátil!
+
 
 <img src="./assets/software-engineer.gif" width="350">
 
