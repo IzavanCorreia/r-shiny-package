@@ -12,28 +12,26 @@ output:
 
 ## Sumário
 
-- [Introdução: Pacotes em R e o Shiny](#Introdução-Pacotes-em-R-e-o-Shiny)
-
+- [Conceitos Introdutórios: Pacotes em R e Aplicações Web](#Conceitos-Introdutórios-Pacotes-em-R-e-o-Shiny)
   - [O que é um pacote em R?](#O-que-é-um-pacote-em-R)
     - [Lista de pacotes](#Lista-de-pacotes)
-  - [O que é o Shiny?](#O-que-é-o-Shiny)
-    - [Entradas e saídas do Shiny](#Entradas-e-saídas-do-Shiny)
+  - [O que é uma aplicação Web?](#O-que-é-uma-aplicação-Web) 
 
-  - [O que é uma aplicação web?](#O-que-é-uma-aplicação-web)
-
-- [Construção da primeira aplicação web com Shiny](#Construção-da-primeira-aplicação-Web-com-Shiny)
-
+- [O que é o Shiny?](#O-que-é-o-Shiny)
+  - [Entradas e saídas do Shiny](#Entradas-e-saídas-do-Shiny)
+    - [inputPanel](#inputPanel)
+    - [renders](#renders)
+- [Exemplo prático: Construção da primeira aplicação web com Shiny](#Exemplo-prático-Construção-da-primeira-aplicação-Web-com-Shiny)
   - [Primeiro passo: Como instalar o pacote](#Primeiro-passo-Como-instalar-o-pacote)
   - [Segundo passo: Construindo a aplicação](#Segundo-passo-Construindo-a-aplicação)
     - [Partes que compõem a aplicação](#Partes-que-compõem-a-aplicação)
     - [Código completo](#Código-completo)
     - [Demonstração da aplicação](#Demonstração-da-aplicação)
-
 - [Outros materiais interessantes sobre o Shiny](#Outros-materiais-interessantes-sobre-o-Shiny)
 
 <img src="./assets/code-typing.png" width="350">
 
-## Introdução: Pacotes em R e o Shiny
+## Conceitos Introdutórios: Pacotes em R e Aplicações Web
 
 ### O que é um pacote em R?
 
@@ -43,13 +41,34 @@ Por exemplo, o pacote USCensus2010 contém essencialmente vários dados sobre o 
 
 #### Lista de pacotes
 
-A lista de pacotes encontra-se disponível no site CRAN (Comprehensive R Archive Network), localizado em <http://cran.r-project.org/> e em seus mirrors. Cada pacote é identificado por um nome, uma string alfanumérica, iniciada por uma letra e case-sensitive; por exemplo bigRR, HotDeckInputation ou R2jags.
+A lista de pacotes encontra-se disponível no site CRAN (*Comprehensive R Archive Network*), localizado em <http://cran.r-project.org/> e em seus mirrors. Cada pacote é identificado por um nome, uma string alfanumérica, iniciada por uma letra e case-sensitive; por exemplo bigRR, HotDeckInputation ou R2jags.
 
-### O que é shiny?
+### O que é uma aplicação Web?
 
-O Shiny se trata de um sistema para desenvolvimento de **aplicações web** usando o R, um pacote do R (shiny) e um servidor web (shiny server). Temos uma breve explicação abaixo sobre [o que é uma aplicação web](#o-que-é-uma-aplicação-web).
+Aplicações Web se referem a **sistemas de informação** construídos com base em **tecnologias** e **protocolos de comunicação** próprios da **Web**, tais como HTTP, HTTPS, HTML, CSS e Javascript. 
 
-> Observação: Não confundir o shiny com uma página web!
+De forma mais simples: aplicações web levam informações de um lugar a outro, contando com a ajuda de várias tecnologias.
+
+Estas aplicações podem utilizar frameworks e bibliotecas derivados das tecnologias já citadas, a exemplo da biblioteca React, destina à construção de interfaces para **sites** renderizados em browsers de PC, React Native, destinada ao desenvolvimento de **aplicativos móveis** e Node.Js, destinada à criação de sistemas que rodam em servidores. 
+
+Estas aplicações precisam estar necessariamente conectadas à rede para funcionarem.
+
+O desenvolvimento deste tipo de sistema é dividido, de forma geral, em desenvolvimento:
+
+-  **front-end**, que se refere à porcão ***client-side*** e as **requisições** feitas por ele, e 
+- **back-end**, que se refere ao ***server-side*** e as **respostas** que o cliente receberá a cada requisição. 
+
+Todos os serviços de streaming de música ou filmes, internet banking e redes sociais, frequentemente usados por nós, constituem complexas aplicações Web, que utilizam não apenas uma, mas várias tecnologias Web.
+
+Ou seja: cada vez que você clica na busca do Google, são as aplicações web que "pegam" sua pesquisa, procuram internamente e te devolvem uma resposta.
+
+<img src="./assets/software-engineer.gif" width="350">
+
+### O que é o Shiny?
+
+O Shiny trata-se de um sistema para desenvolvimento de **aplicações web** usando o R, um pacote do R (shiny) e um servidor web (shiny server). 
+
+> Observação: Não confundir o shiny com uma página web! Ele é uma ferramenta que torna a linguagem R mais robusta e versátil, ajudando a construir aplicações web.
 
 #### Entradas e saídas no shiny
 
@@ -57,7 +76,7 @@ O Shiny se trata de um sistema para desenvolvimento de **aplicações web** usan
 
 É preciso adicionar os inputs para criar o painel onde os usuários possam interagir. 
 
-Na prática, inputs são widgets que possibilitam a interação do usuário com o app. Eles recebem um valor escolhido pelo usuário e o envia para o server side.
+Na prática, inputs são widgets que possibilitam a interação do usuário com o app. Eles recebem um valor escolhido pelo usuário e este valor é enviado para o server side.
 
 Segue uma lista das principais funções para inputs utilizados em um Shiny app:
 
@@ -97,24 +116,7 @@ Segue uma lista das principais funções para outputs utilizados em um Shiny app
 
 - ``renderUI``: um elemento do UI ou HTML.
 
-
-
-### O que é uma aplicação Web?
-
-Aplicações Web se referem a **sistemas de informação** construídos com base em **tecnologias** e **protocolos** próprios da **Web**, tais como HTTP, HTTPS, HTML, CSS e Javascript. Estas aplicações podem ainda utilizar frameworks e bibliotecas derivados das tecnologias já citadas, a exemplo da biblioteca React, destina à construção de interfaces para **sites** renderizados em browsers de PC, React Native, destinada ao desenvolvimento de **aplicativos móveis** ***crossplatforms***, e Node.Js, destinada à criação de sistemas que rodam em servidores. Não necessariamente estas aplicações precisam estar conectadas à rede para funcionarem.
-
-De forma geral, no mercado da tecnologia da informação, o desenvolvimento deste tipo de sistema, é dividido em: desenvolvimento **front-end**, que se refere à porcão ***client-side***, e em **back-end**, que se refere ao ***server-side***. Ambas as ramificações configuram aplicações web, tanto quando consideradas sob uma ótica individual, quanto conjunta. Neste último caso, a arquitetura do sistema revela a lógica ou o padrão mais comum de funcionamento das aplicações Web: o **modelo de requisições** (enviadas pelo usuário) **e de respostas** (enviadas pelos servidores). 
-
-Todos os serviços de streaming de música ou filmes, internet banking e redes sociais, frequentemente usados por nós, constituem complexas aplicações Web, que utilizam não apenas uma, mas várias tecnologias Web.
-
-Neste contexto, o **Shiny** é um sistema composto por: um **pacote de funções** construídas na Linguagem R e um **servidor web** denominado ***"Shiny server"***, este conjunto permite a criação de **interfaces** amigáveis para a **visualização** e a **análise de dados** em aplicações Web. Este pacote permite a interação do usuário com os dados da maneira que mais lhe for conveniente, o que pode envolver desde a criação de filtros à escolha do tipo de visualização (gráficos de dispersão, histogramas etc.). Isto é possível gracas à sua integração com outros pacotes R como ggvis, ggiraph, plotly, etc.
-
-É importante pontuar que **o Shiny não é uma aplicação web**, mas sim uma extensão que torna a Linguagem R uma tecnologia ainda mais robusta e versátil!
-
-
-<img src="./assets/software-engineer.gif" width="350">
-
-## Construção da primeira aplicação Web com Shiny
+## Exemplo prático: Construção da primeira aplicação Web com Shiny
 
 ### Primeiro passo: Instalar o pacote
 
