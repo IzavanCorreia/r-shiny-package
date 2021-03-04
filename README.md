@@ -22,6 +22,100 @@ Mariana Vieira, Izavan Correia, Daniel S
 
 ## Sobre o pacote Shiny
 
+### O que é um pacote em R?
+
+Pacotes (em inglês packages) em R são bibliotecas contendo funções e
+dados, que não tem uma utilidade geral, mas são importantes para alguma
+finalidade específica. Por exemplo, o pacote USCensus2010 contém
+essencialmente vários dados sobre o Censo dos Estados Unidos de 2010,
+com algumas funções auxiliares para tratar estes dados.
+
+### Lista de pacotes
+
+A lista de pacotes encontra-se disponível no site CRAN (Comprehensive R
+Archive Network), localizado em <http://cran.r-project.org/> e em seus
+mirrors. Cada pacote é identificado por um nome, uma string
+alfanumérica, iniciada por uma letra e case-sensitive; por exemplo
+bigRR, HotDeckInputation ou R2jags.
+
+### Como criar um pacote em R?
+
+Para aprender a criar um pacote em R é indicado assistir ao tutorial
+abaixo, sobre como construir pacotes em R e subir para o GitHub:
+
+<https://www.youtube.com/watch?v=w7wmuxGvJNw&feature=youtu.be>
+
+### O que é shiny?
+
+O Shiny se trata de um sistema para desenvolvimento de aplicações web
+usando o R, um pacote do R (shiny) e um servidor web (shiny server).
+
+> Observação: Não confundir o shiny com uma página web!
+
+### Entradas e saídas no shiny:
+
+#### inputPanel
+
+É preciso adicionar os inputs para criar o painel onde os usuários
+possam interagir.
+
+Na prática, inputs são widgets que possibilitam a interação do usuário
+com o app. Eles recebem um valor escolhido pelo usuário e o envia para o
+server side.
+
+Segue uma lista das principais funções para inputs utilizados em um
+Shiny app:
+
+-   `actionButton`: botão para executar uma ação.
+
+-   `checkboxGroupInput`: um grupo de check boxes.
+
+-   `checkboxInput`: um único check box.
+
+-   `fileInput`: uma ferramenta para auxiliar o upload de arquivos.
+
+-   `numericInput`: Um campo para enviar números.
+
+-   `radioButtons`: Um conjunto de botões para seleção.
+
+-   `selectInput`: Um select box com um conjunto de opções.
+
+-   `textInput`: Um campo para enviar texto.
+
+#### renders
+
+Os outputs devem ser construídos com funções render\_(). Existe uma
+função render\_() para cada tipo de objeto.O argumento dessas funções
+será sempre um bloco de código, usado para gerar o output desejado.
+
+Segue uma lista das principais funções para outputs utilizados em um
+Shiny app:
+
+-   `renderDataTable`: data frames.
+
+-   `renderImage`: imagens.
+
+-   `renderPlot`: gráficos.
+
+-   `renderPrint`: qualquer printed output.
+
+-   `renderTable`: data frames, matrizes, e outras estruturas em forma
+    de tabela.
+
+-   `renderText`: strings.
+
+-   `renderUI`: um elemento do UI ou HTML.
+
+### Outros materiais interessantes sobre o shiny
+
+<https://shiny.rstudio.com/tutorial/>
+
+<https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/>
+
+<http://material.curso-r.com/shiny/>
+
+<https://github.com/rstudio/shiny-examples>
+
 ## Mas o que é uma aplicação Web?
 
 <img src="./assets/software-engineer.gif" width="350">
